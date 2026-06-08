@@ -12,3 +12,9 @@ trypsinize <- function(proteins) {
   
   lapply(proteins, str_split_1, pattern = "(?<=R|K)")
 }
+
+split_peptides <- function(peptides) {
+  library(stringr)
+  
+  lapply(peptides, str_split, pattern = "")
+}
